@@ -1,0 +1,46 @@
+#home {
+    background-color: #1e3155;
+    color: var(--color-text);
+    padding: 5rem 1rem;
+    padding-top: 7rem;
+    height: 100vh;
+}
+
+#home .title {
+    min-height: 132px;
+}
+
+.home-main {
+    padding-top: 80px;
+}
+
+.home-image {
+    width: 200px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.title-span {
+    color: var(--color-accent);
+}
+
+.contact-btn {
+    display: inline-block;
+    background-color: var(--color-accent);
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    margin: 2rem;
+}
+
+.contact-btn:hover {
+    background-color: transparent;
+    outline: 2px solid var(--color-accent);
+    color: var(--color-text);
+}
+
+@media screen and (max-width : 768px) {
+    #home {
+        padding-bottom: 3rem;
+    }
+}
