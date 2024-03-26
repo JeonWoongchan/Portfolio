@@ -8,7 +8,7 @@ const Home = forwardRef((props, ref) => {
 
     return (
         <section ref={ref} id='home' className='section'>
-            <div style={{ opacity: useSectionOpacity(ref) }} className='max-container'>
+            <div style={{ opacity: useSectionOpacity(ref) }} className='max-container home-main' >
                 <img className='home-image' src="/images/profile.png" alt="" />
                 <TypeIt
                     options={{

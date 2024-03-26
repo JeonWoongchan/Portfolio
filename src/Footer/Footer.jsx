@@ -6,6 +6,7 @@ import './css/footer.css'
 import useScroll from '../Function/useScroll';
 
 const Footer = forwardRef((props, ref) => {
+    const {scrollY} = useScroll()
 
     return (
         <footer ref={ref} id='footer' className=''>
@@ -20,7 +21,7 @@ const Footer = forwardRef((props, ref) => {
                 </ul>
             </div>
             <p className='description'>jchan715@naver.com</p>
-            <aside style={{ display: useScroll() > 150 ? 'block' : 'none' }}>
+            <aside style={{ display: scrollY > 150 ? 'block' : 'none' }}>
                 <a href="" title='back to top'><FontAwesomeIcon icon={faArrowUp} className='arrow-up-icon' /></a>
             </aside>
         </footer>
