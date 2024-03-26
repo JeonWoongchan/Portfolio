@@ -1,0 +1,187 @@
+/* Grobal */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+
+:root {
+    /* App Colors */
+    --color-primary: var(--color-black);
+    --color-primary-variant: var(--color-gray);
+    --color-accent: var(--color-blue);
+    --color-accent-variant: var(--color-orange);
+    --color-text: var(--color-white);
+
+    /* Colors */
+    --color-white: #ffffff;
+    --color-black: #050a13;
+    --color-blue: #03e8f9;
+    --color-orange: #fd6413;
+    --color-gray: #1b1e26;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-primary)
+}
+
+button {
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+}
+
+button:focus {
+    outline: 1px solid var(--color-accent);
+}
+
+.section {
+    padding: 4rem;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 3rem 0 2rem;
+}
+
+.description {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.max-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0;
+}
+
+.slide-down {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    margin: 20px auto 0;
+    background: rgba(0,0,0,0.3);
+}
+
+.slide-down-btn {
+    font-size: 4rem;
+}
+
+.slide-down::before {
+    content: '';
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    border-radius: 50%;
+    animation: CircleAnimation 3s infinite linear;
+}
+
+.slide-down::after {
+    content: '';
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    border-radius: 50%;
+    animation: CircleAnimation 1.5s infinite linear;
+}
+
+.git-icon:hover, .career-icon:hover {
+    transform: scale(1.1);
+}
+
+@keyframes CircleAnimation {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+@keyframes CircleAnimation2 {
+    0% {
+        transform: scale(0);
+    }
+    
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes slideUp {
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideRight {
+    0%{
+        transform: translateX(-200px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideLeft {
+    0%{
+        transform: translateX(200px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .section {
+        padding: 3rem 2rem;
+    }
+
+    .title {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+}
