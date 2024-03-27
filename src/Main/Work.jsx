@@ -13,9 +13,9 @@ const Work = forwardRef((props, ref) => {
         { id: 6, 'category': 'React', 'title': '레스토랑 WooDy', 'img': '/project/resaurantCover.png', 'detail': '예약 가능한 레스토랑 사이트', 'url': 'https://github.com/JeonWoongchan/restaurant' },
         { id: 7, 'category': 'React', 'title': '커뮤니티OTT', 'img': '/project/ottCover.png', 'detail': '디즈니플러스 클론코딩 + 커뮤니티', 'url': 'https://github.com/JeonWoongchan/BomBomOTT' },
         { id: 8, 'category': 'React', 'title': 'Weather Life', 'img': '/project/weatherCover.png', 'detail': '날씨 정보 제공 사이트', 'url': 'https://github.com/JeonWoongchan/weatherLife' },
-        { id: 9, 'category': 'NextJs', 'title': 'NextJS Practice', 'img': '/project/forum.png', 'detail': 'NextJS 연습용 게시판', 'url': 'https://github.com/JeonWoongchan/NextJsPractice' }]
+        { id: 9, 'category': 'NextJs', 'title': 'NextJS Practice', 'img': '/project/forumCover.png', 'detail': 'NextJS 연습용 게시판', 'url': 'https://github.com/JeonWoongchan/NextJsPractice' }]
 
-    return (
+    return ( 
         <section ref={ref} id='work' className='section'>
             <div className="max-container" style={{ opacity: useSectionOpacity(ref) }}>
                 <h2 className='title'>My work</h2>
