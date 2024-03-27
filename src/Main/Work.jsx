@@ -1,7 +1,6 @@
 import React, { forwardRef, useState } from 'react';
 import './css/work.css'
 import useSectionOpacity from '../Function/useSectionOpacity';
-import SlideDown from './SlideDown';
 
 const Work = forwardRef((props, ref) => {
     const [isSelected, setIsSelected] = useState('All');
