@@ -41,7 +41,7 @@ function App() {
         <Work ref={workRef} handleMenuClick={handleMenuClick}/>
         {/* <Testimonials ref={testimonialsRef} handleMenuClick={handleMenuClick}/> */}
       </main>
-      <Footer ref={footRef} />
+      <Footer ref={footRef} handleMenuClick={handleMenuClick}/>
     </div>
   );
 }

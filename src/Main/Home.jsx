@@ -22,7 +22,7 @@ const Home = forwardRef((props, ref) => {
                 <p className='description'>
                     다양한 경험을 통해 항상 발전하는 프론트엔드 개발자를 목표로 하고 있습니다.
                 </p>
-                <a className='contact-btn' href="">Contact Me</a>
+                <a className='contact-btn' href="https://www.notion.so/a1e0c672daa34288ba214c1b7739b78a?pvs=4">Contact Me</a>
             </div>
             <SlideDown handleMenuClick={props.handleMenuClick} next={'About'} />
         </section>

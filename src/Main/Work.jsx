@@ -1,6 +1,7 @@
 import React, { forwardRef, useState } from 'react';
 import './css/work.css'
 import useSectionOpacity from '../Function/useSectionOpacity';
+import SlideDown from './SlideDown';
 
 const Work = forwardRef((props, ref) => {
     const [isSelected, setIsSelected] = useState('All');
@@ -19,7 +20,6 @@ const Work = forwardRef((props, ref) => {
         <section ref={ref} id='work' className='section'>
             <div className="max-container" style={{ opacity: useSectionOpacity(ref) }}>
                 <h2 className='title'>My work</h2>
-                {/* <p className='description'>Projects</p> */}
                 <ul className='work-list'>
                     <li className='work'>
                         <button className={`work-btn ${isSelected == 'All' ? 'btn-selected' : ''}`}
@@ -45,7 +45,8 @@ const Work = forwardRef((props, ref) => {
                         )
                     })}
                 </ul>
-                {/* <SlideDown handleMenuClick={props.handleMenuClick} next={'Testimonials'} /> */}
+                <p className='description'>아이템을 클릭해서 페이지로 이동할 수 있습니다.</p>
+                <SlideDown handleMenuClick={props.handleMenuClick} next={'Contact'} />
             </div>
         </section>
     );

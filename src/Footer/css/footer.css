@@ -20,6 +20,10 @@
     width: 32px;
 }
 
+.up-to-home {
+    cursor: pointer;
+}
+
 .arrow-up-icon  {
     background-color: var(--color-primary);
     position: fixed;

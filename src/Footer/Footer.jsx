@@ -21,9 +21,9 @@ const Footer = forwardRef((props, ref) => {
                 </ul>
             </div>
             <p className='description'>jchan715@naver.com</p>
-            <aside style={{ display: scrollY > 150 ? 'block' : 'none' }}>
-                <a href="" title='back to top'><FontAwesomeIcon icon={faArrowUp} className='arrow-up-icon' /></a>
-            </aside>
+            <div className='up-to-home' style={{ display: scrollY > 150 ? 'block' : 'none' }} >
+                <a onClick={()=>{props.handleMenuClick('Home')}}><FontAwesomeIcon icon={faArrowUp} className='arrow-up-icon' /></a>
+            </div>
         </footer>
     );
 })
