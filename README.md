@@ -2,7 +2,7 @@
 - 나를 소개하는 포트폴리오 사이트
 - 공부 과정, 블로그 및 프로젝트 활동을 기술 
   
-  [Portfolio 배포 링크](https://bom-bom-ott.vercel.app/)
+  [Portfolio 배포 링크](https://portfolio-rosy-five-81.vercel.app/)
 
 ## 프로젝트 설명
 
