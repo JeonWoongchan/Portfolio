@@ -30,7 +30,4 @@
      
    ![s-Chrome2024-03-2812-34-55-ezgif com-crop (2)](https://github.com/JeonWoongchan/Portfolio/assets/124865284/0890f6bf-dd0c-4c0e-9375-6d13fa10c98b)
 
-4. Work
-   - 제가 공부한 블로그 내용과 프로젝트를 정리해 보았습니다.
-     
-   ![s-Chrome2024-03-2812-34-55-ezgif com-video-to-gif-converter](https://github.com/JeonWoongchan/Portfolio/assets/124865284/edc610c3-2ccd-4396-aa2a-496dc7091b10)
+
