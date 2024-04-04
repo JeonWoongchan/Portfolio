@@ -25,19 +25,19 @@ const Work = forwardRef((props, ref) => {
                 <ul className='work-list'>
                     <li className='work'>
                         <button className={`work-btn ${isSelected == 'All' ? 'btn-selected' : ''}`}
-                            onClick={() => { setIsSelected('All') }}>All<span className='work-btn-span'>8</span></button>
+                            onClick={() => { setIsSelected('All') }}>All<span className='work-btn-span'>{PROJECT_LIST.length}</span></button>
                     </li>
                     <li className='work'>
                         <button className={`work-btn ${isSelected == 'Blog' ? 'btn-selected' : ''}`}
-                            onClick={() => { setIsSelected('Blog') }}>Blog<span className='work-btn-span'>4</span></button>
+                            onClick={() => { setIsSelected('Blog') }}>Blog<span className='work-btn-span'>{PROJECT_LIST.filter(project => project.category === 'Blog').length}</span></button>
                     </li>
                     <li className='work'>
                         <button className={`work-btn ${isSelected == 'React' ? 'btn-selected' : ''}`}
-                            onClick={() => { setIsSelected('React') }}>React<span className='work-btn-span'>3</span></button>
+                            onClick={() => { setIsSelected('React') }}>React<span className='work-btn-span'>{PROJECT_LIST.filter(project => project.category === 'React').length}</span></button>
                     </li>
                     <li className='work'>
                         <button className={`work-btn ${isSelected == 'NextJs' ? 'btn-selected' : ''}`}
-                            onClick={() => { setIsSelected('NextJs') }}>NextJS<span className='work-btn-span'>1</span></button>
+                            onClick={() => { setIsSelected('NextJs') }}>NextJS<span className='work-btn-span'>{PROJECT_LIST.filter(project => project.category === 'NextJs').length}</span></button>
                     </li>
                 </ul>
                 <ul className='project-list'>
