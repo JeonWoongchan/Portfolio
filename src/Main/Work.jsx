@@ -6,8 +6,8 @@ import SlideDown from './SlideDown';
 const Work = forwardRef((props, ref) => {
     const [isSelected, setIsSelected] = useState('All');
     const PROJECT_LIST = [
-        { id: 1, 'category': 'Blog', 'title': '웹소켓', 'img': '/project/React.jpeg', 'detail': 'JWT 로그인 방식', 'url': 'https://velog.io/@jchan715/React-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EC%B2%98%EB%A6%ACJWT' },
-        { id: 2, 'category': 'Blog', 'title': 'REST API', 'img': '/project/React.jpeg', 'detail': 'JWT 로그인 방식', 'url': 'https://velog.io/@jchan715/React-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EC%B2%98%EB%A6%ACJWT' },
+        { id: 1, 'category': 'Blog', 'title': '웹소켓', 'img': '/project/socket.png', 'detail': '웹소켓에 대한 이해', 'url': 'https://velog.io/@jchan715/%EC%9B%B9-%EC%86%8C%EC%BC%93' },
+        { id: 2, 'category': 'Blog', 'title': 'REST API', 'img': '/project/rest.png', 'detail': 'REST API에 대한 이해', 'url': 'https://velog.io/@jchan715/REST-API' },
         { id: 3, 'category': 'Blog', 'title': '리액트 로그인 처리', 'img': '/project/React.jpeg', 'detail': 'JWT 로그인 방식', 'url': 'https://velog.io/@jchan715/React-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EC%B2%98%EB%A6%ACJWT' },
         { id: 4, 'category': 'Blog', 'title': 'CSR vs SCR', 'img': '/project/csr.png', 'detail': 'CSR과 SCR에 대한 이해', 'url': 'https://velog.io/@jchan715/CSR%EA%B3%BC-SSR' },
         { id: 5, 'category': 'Blog', 'title': '캘린더 구현', 'img': '/project/calendar0.png', 'detail': '캘린더 기능 구현방식', 'url': 'https://velog.io/@jchan715/React-%EC%BA%98%EB%A6%B0%EB%8D%94-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0' },
